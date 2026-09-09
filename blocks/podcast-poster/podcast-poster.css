@@ -2,59 +2,93 @@
   padding: 40px 0;
 }
 
+/* Main two-column layout */
 .podcast-poster > div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  column-gap: 40px;
+  row-gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
   align-items: center;
-  gap: 40px;
 }
 
-.podcast-poster img {
+/* Image */
+.podcast-poster > div > div:first-child {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.podcast-poster > div > div:first-child img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
-.podcast-poster > div > div:first-child {
-  flex: 0 0 40%;
+/* Title */
+.podcast-poster > div > div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.podcast-poster > div > div:last-child {
-  flex: 1;
-}
-
-.podcast-poster h1 {
-  margin: 0 0 30px;
+.podcast-poster > div > div:nth-child(2) p {
+  margin: 0;
   font-size: 36px;
   line-height: 1.2;
+  font-weight: 600;
 }
 
-.podcast-poster a {
+/* Description */
+.podcast-poster > div > div:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.podcast-poster > div > div:nth-child(3) p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* CTA */
+.podcast-poster > div > div:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.podcast-poster > div > div:nth-child(4) a {
   display: inline-block;
   padding: 12px 24px;
   background: #6a2c91;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 4px;
   font-weight: 600;
 }
 
-.podcast-poster a:hover {
+.podcast-poster > div > div:nth-child(4) a:hover {
   background: #542170;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
+  .podcast-poster {
+    padding: 24px 16px;
+  }
+
   .podcast-poster > div {
-    flex-direction: column;
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .podcast-poster > div > div:first-child,
-  .podcast-poster > div > div:last-child {
-    flex: auto;
-    width: 100%;
+  .podcast-poster > div > div:nth-child(2),
+  .podcast-poster > div > div:nth-child(3),
+  .podcast-poster > div > div:nth-child(4) {
+    grid-column: 1;
+    grid-row: auto;
   }
 
-  .podcast-poster h1 {
+  .podcast-poster > div > div:nth-child(2) p {
     font-size: 28px;
   }
 }
