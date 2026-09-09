@@ -2,12 +2,11 @@
   padding: 40px 0;
 }
 
-/* Main two-column layout */
 .podcast-poster > div {
   display: grid;
   grid-template-columns: 40% 1fr;
   column-gap: 40px;
-  row-gap: 16px;
+  row-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
@@ -16,7 +15,7 @@
 /* Image */
 .podcast-poster > div > div:first-child {
   grid-column: 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 2;
 }
 
 .podcast-poster > div > div:first-child img {
@@ -38,21 +37,15 @@
   font-weight: 600;
 }
 
-/* Description */
+/* Hide description because it is being used as CTA text */
 .podcast-poster > div > div:nth-child(3) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.podcast-poster > div > div:nth-child(3) p {
-  margin: 0;
-  font-size: 18px;
+  display: none;
 }
 
 /* CTA */
 .podcast-poster > div > div:nth-child(4) {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
 }
 
 .podcast-poster > div > div:nth-child(4) a {
@@ -69,7 +62,6 @@
   background: #542170;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .podcast-poster {
     padding: 24px 16px;
@@ -82,7 +74,6 @@
 
   .podcast-poster > div > div:first-child,
   .podcast-poster > div > div:nth-child(2),
-  .podcast-poster > div > div:nth-child(3),
   .podcast-poster > div > div:nth-child(4) {
     grid-column: 1;
     grid-row: auto;
