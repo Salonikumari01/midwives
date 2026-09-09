@@ -1,0 +1,60 @@
+.podcast-poster {
+  padding: 40px 0;
+}
+
+.podcast-poster > div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.podcast-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcast-poster > div > div:first-child {
+  flex: 0 0 40%;
+}
+
+.podcast-poster > div > div:last-child {
+  flex: 1;
+}
+
+.podcast-poster h1 {
+  margin: 0 0 30px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.podcast-poster a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #6a2c91;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.podcast-poster a:hover {
+  background: #542170;
+}
+
+@media (max-width: 768px) {
+  .podcast-poster > div {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .podcast-poster > div > div:first-child,
+  .podcast-poster > div > div:last-child {
+    flex: auto;
+    width: 100%;
+  }
+
+  .podcast-poster h1 {
+    font-size: 28px;
+  }
+}
