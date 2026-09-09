@@ -3,52 +3,43 @@
 }
 
 .podcast-poster > div {
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  column-gap: 40px;
-  row-gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
 }
 
-/* Image */
+.podcast-poster-image {
+  margin-left: 100px
+}
+
+/* Left column */
 .podcast-poster > div > div:first-child {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+  flex: 0 0 35%;
 }
 
-.podcast-poster > div > div:first-child img {
+.podcast-poster img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+/* Right column */
+.podcast-poster-content {
+  flex: 1;
+}
+
 /* Title */
-.podcast-poster > div > div:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.podcast-poster > div > div:nth-child(2) p {
-  margin: 0;
-  font-size: 36px;
+.podcast-poster-content > div:first-child p {
+  margin: 0 0 30px;
+  font-size: 44px;
   line-height: 1.2;
-  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-/* Hide description because it is being used as CTA text */
-.podcast-poster > div > div:nth-child(3) {
-  display: none;
-}
-
-/* CTA */
-.podcast-poster > div > div:nth-child(4) {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.podcast-poster > div > div:nth-child(4) a {
+/* Button */
+.podcast-poster-content > div:last-child a {
   display: inline-block;
   padding: 12px 24px;
   background: #6a2c91;
@@ -58,28 +49,29 @@
   font-weight: 600;
 }
 
-.podcast-poster > div > div:nth-child(4) a:hover {
+.podcast-poster-content > div:last-child a:hover {
   background: #542170;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .podcast-poster {
-    padding: 24px 16px;
-  }
-
   .podcast-poster > div {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
   }
 
-  .podcast-poster > div > div:first-child,
-  .podcast-poster > div > div:nth-child(2),
-  .podcast-poster > div > div:nth-child(4) {
-    grid-column: 1;
-    grid-row: auto;
+  .podcast-poster > div > div:first-child {
+    flex: none;
+    width: 100%;
   }
 
-  .podcast-poster > div > div:nth-child(2) p {
+  .podcast-poster-content {
+    width: 100%;
+  }
+
+  .podcast-poster-content > div:first-child p {
     font-size: 28px;
+    margin-bottom: 12px;
   }
 }
