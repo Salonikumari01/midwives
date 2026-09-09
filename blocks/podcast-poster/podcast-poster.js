@@ -1,3 +1,3 @@
-export default function decorate(block) {
+export default function decorate() {
   // Podcast Poster does not require JavaScript.
 }

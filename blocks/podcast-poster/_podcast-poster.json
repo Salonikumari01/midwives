@@ -31,40 +31,40 @@
       }
     }
   ],
-  "models": [
+"models": [
+  {
+    "id": "podcast-poster-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
     {
-      "id": "podcast-poster-item",
-      "fields": [
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "multi": false
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "title",
-          "label": "Title",
-          "required": true
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "buttonText",
-          "label": "Button Text",
-          "required": true
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "buttonLink",
-          "label": "Button Link"
-        }
-      ]
-    }
-  ],
+  "component": "text",
+  "valueType": "string",
+  "name": "description",
+  "label": "Description",
+  "required": true
+},
+{
+  "component": "text",
+  "valueType": "string",
+  "name": "link",
+  "label": "Link"
+}
+    ]
+  }
+],
   "filters": [
     {
       "id": "podcast-poster",
