@@ -41,6 +41,12 @@
     ]
   },
   {
+    "id": "hero-banner",
+    "components": [
+      "hero-banner"
+    ]
+  },
+  {
     "id": "podcast-poster",
     "components": [
       "podcast-poster-item"

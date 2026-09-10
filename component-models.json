@@ -190,6 +190,38 @@
     ]
   },
   {
+    "id": "hero-banner",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "bloomImage",
+        "label": "Bloom Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "heroImage",
+        "label": "Hero Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Sub Title"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {

@@ -1,0 +1,134 @@
+.hero-banner {
+  width: 100%;
+}
+
+/* Main two-column container */
+.hero-banner-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* Left side */
+.hero-banner-content {
+  flex: 0 0 calc(50% - 25px);
+}
+
+/* Right side */
+.hero-banner-image {
+  flex: 0 0 calc(50% - 25px);
+}
+
+/* Bloom image */
+.hero-banner-bloom {
+  margin-bottom: 20px;
+}
+
+.hero-banner-bloom img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+/* Title */
+.hero-banner-title {
+  margin-bottom: 16px;
+}
+
+.hero-banner-title h1,
+.hero-banner-title h2,
+.hero-banner-title h3,
+.hero-banner-title h4,
+.hero-banner-title h5,
+.hero-banner-title h6 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Subtitle */
+.hero-banner-subtitle {
+  margin-bottom: 28px;
+}
+
+.hero-banner-subtitle p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* CTA */
+.hero-banner-cta {
+  display: inline-block;
+  padding: 13px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.hero-banner-cta:hover {
+  opacity: 0.8;
+}
+
+/* Hero image */
+.hero-banner-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media (width <= 900px) {
+  .hero-banner-container {
+    gap: 30px;
+    padding: 50px 30px;
+  }
+
+  .hero-banner-title h1,
+  .hero-banner-title h2,
+  .hero-banner-title h3,
+  .hero-banner-title h4,
+  .hero-banner-title h5,
+  .hero-banner-title h6 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (width <= 768px) {
+  .hero-banner-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 40px 20px;
+  }
+
+  .hero-banner-content,
+  .hero-banner-image {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .hero-banner-bloom img {
+    width: 90px;
+  }
+
+  .hero-banner-title h1,
+  .hero-banner-title h2,
+  .hero-banner-title h3,
+  .hero-banner-title h4,
+  .hero-banner-title h5,
+  .hero-banner-title h6 {
+    font-size: 32px;
+  }
+
+  .hero-banner-subtitle p {
+    font-size: 16px;
+  }
+}
