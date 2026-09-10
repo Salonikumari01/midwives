@@ -1,13 +1,14 @@
 export default function decorate(block) {
   const rows = [...block.children];
 
-  // Get the existing fields
+  // The first four rows map to the hero-banner model fields.
   const bloomImage = rows[0];
   const heroImage = rows[1];
   const title = rows[2];
   const subtitle = rows[3];
-  const ctaText = rows[4];
-  const ctaLink = rows[5];
+
+  // Any remaining rows are authored Button child components.
+  const buttonRows = rows.slice(4);
 
   // Create main container
   const container = document.createElement('div');
@@ -48,28 +49,22 @@ export default function decorate(block) {
     content.appendChild(subtitleElement);
   }
 
-  // CTA
-  if (ctaText || ctaLink) {
-    const cta = document.createElement('a');
-    cta.className = 'hero-banner-cta';
+  // CTA buttons authored as Button child components
+  const links = buttonRows
+    .flatMap((row) => [...row.querySelectorAll('a')])
+    .filter((a) => a.textContent.trim() || a.href);
 
-    // CTA text
-    if (ctaText) {
-      cta.textContent = ctaText.textContent.trim();
-    }
+  if (links.length) {
+    const ctaWrapper = document.createElement('div');
+    ctaWrapper.className = 'hero-banner-cta';
 
-    // CTA link
-    if (ctaLink) {
-      const existingLink = ctaLink.querySelector('a');
+    links.forEach((link) => {
+      // Preserve primary/secondary styling if the core button decoration ran.
+      link.classList.add('hero-banner-cta-link');
+      ctaWrapper.appendChild(link);
+    });
 
-      if (existingLink) {
-        cta.href = existingLink.href;
-      } else {
-        cta.href = ctaLink.textContent.trim();
-      }
-    }
-
-    content.appendChild(cta);
+    content.appendChild(ctaWrapper);
   }
 
   // Hero image
