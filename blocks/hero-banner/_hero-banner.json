@@ -47,6 +47,13 @@
           "valueType": "string",
           "name": "subtitle",
           "label": "Sub Title"
+        },
+        {
+        "component": "container",
+        "name": "button",
+        "label": "Button",
+        "valueType": "string",
+        "fields": []
         }
       ]
     }
