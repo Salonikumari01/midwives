@@ -17,7 +17,9 @@
       "columns",
       "fragment",
       "podcast-poster",
-      "hero-banner"
+      "hero-banner",
+      "ge-footer",
+      "footer-item"
     ]
   },
   {
@@ -39,6 +41,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "footer-item",
+    "components": [
+      "footer-item"
+    ]
+  },
+  {
+    "id": "ge-footer",
+    "components": [
+      "footer-item"
     ]
   },
   {

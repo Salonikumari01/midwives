@@ -180,12 +180,55 @@
     ]
   },
   {
+    "id": "footer-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "label",
+        "label": "Link Text"
+      },
+      {
+        "component": "text",
+        "name": "url",
+        "label": "Link URL"
+      },
+      {
+        "component": "boolean",
+        "name": "openInNewTab",
+        "label": "Open in New Tab",
+        "value": false
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "ge-footer",
+    "fields": [
+      {
+        "component": "text",
+        "name": "contactUs",
+        "label": "ContactUs Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "logo",
+        "label": "Footer Logo"
+      },
+      {
+        "component": "richtext",
+        "name": "copyright",
+        "label": "Copyright Text",
+        "valueType": "string"
       }
     ]
   },

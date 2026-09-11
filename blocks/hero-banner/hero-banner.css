@@ -33,21 +33,14 @@
   height: auto;
 }
 
-/* Title */
-.hero-banner-title {
-  margin-bottom: 16px;
-}
 
-.hero-banner-title h1,
-.hero-banner-title h2,
-.hero-banner-title h3,
-.hero-banner-title h4,
-.hero-banner-title h5,
-.hero-banner-title h6 {
+.hero-banner-title p {
   margin: 0;
-  font-size: 42px;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #6022A6;
+  font-weight: 600;
+  padding: 30px 0 20px;
 }
 
 /* Subtitle */
@@ -75,7 +68,7 @@
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 1px;
   transition: opacity 0.2s ease;
 }
 

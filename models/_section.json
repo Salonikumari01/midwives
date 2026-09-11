@@ -52,7 +52,9 @@
         "columns",
         "fragment",
         "podcast-poster",
-        "hero-banner"
+        "hero-banner",
+        "ge-footer",
+        "footer-item"
       ]
     }
   ]
