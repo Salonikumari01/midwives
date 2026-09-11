@@ -1,6 +1,13 @@
 .ge-footer {
   background-color: var(--color-background);
   color: var(--color-text);
-  padding: 2rem;
-  text-align: center;
+  padding: 0 100px;
+  text-align: center; 
+  display: flex;
+  gap: 20px;
 }
+
+.ge-footer > div  {
+  padding: 0 100px 0 0;
+}
+

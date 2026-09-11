@@ -26,11 +26,7 @@
           "label": "ContactUs Text",
           "valueType": "string"
         },
-        {
-          "component": "reference",
-          "name": "logo",
-          "label": "Footer Logo"
-        },
+      
         {
           "component": "richtext",
           "name": "copyright",
@@ -42,6 +38,11 @@
           "name": "links",
           "label": "footer Links",
           "valueType": "string"
+        },
+          {
+          "component": "reference",
+          "name": "logo",
+          "label": "Footer Logo"
         }
       ]
     }
