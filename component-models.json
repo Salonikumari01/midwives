@@ -180,27 +180,6 @@
     ]
   },
   {
-    "id": "footer-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "label": "Link Text"
-      },
-      {
-        "component": "text",
-        "name": "url",
-        "label": "Link URL"
-      },
-      {
-        "component": "boolean",
-        "name": "openInNewTab",
-        "label": "Open in New Tab",
-        "value": false
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -228,6 +207,12 @@
         "component": "richtext",
         "name": "copyright",
         "label": "Copyright Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "links",
+        "label": "footer Links",
         "valueType": "string"
       }
     ]

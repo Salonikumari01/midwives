@@ -1,5 +1,6 @@
-.footer {
-  background: #f7f5fb;
-  padding: 48px 8%;
+.ge-footer {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 2rem;
+  text-align: center;
 }
-

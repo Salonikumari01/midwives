@@ -36,6 +36,12 @@
           "name": "copyright",
           "label": "Copyright Text",
           "valueType": "string"
+        },
+         {
+          "component": "richtext",
+          "name": "links",
+          "label": "footer Links",
+          "valueType": "string"
         }
       ]
     }
@@ -44,7 +50,7 @@
         {
         "id": "ge-footer",
         "components": [
-            "footer-item"
+           "ge-footer"
         ]
         }
     ]
