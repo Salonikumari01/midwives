@@ -51,9 +51,15 @@
     ]
   },
   {
+    "id": "footer-item",
+    "components": [
+      "footer-item"
+    ]
+  },
+  {
     "id": "ge-footer",
     "components": [
-      "ge-footer"
+      "footer-item"
     ]
   },
   {
