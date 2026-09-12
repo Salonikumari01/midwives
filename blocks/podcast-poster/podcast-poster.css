@@ -19,6 +19,10 @@
   flex: 0 0 35%;
 }
 
+.podcast-poster > div > div:last-child {
+  flex: 0 0 65%;
+}
+
 .podcast-poster img {
   display: block;
   width: 100%;

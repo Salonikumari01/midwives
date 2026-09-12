@@ -1,13 +1,58 @@
 .ge-footer {
-  background-color: var(--color-background);
-  color: var(--color-text);
-  padding: 0 100px;
-  text-align: center; 
   display: flex;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0px 100px 0px 100px;
+  font-size: medium;
 }
 
-.ge-footer > div  {
-  padding: 0 100px 0 0;
+.ge-footer > div:nth-child(1) {
+  flex: 0.6;
+   align-self: center;
+ 
+}
+
+.ge-footer > div:nth-child(2) {
+  flex: 3;
+}
+
+.ge-footer > div:nth-child(3) {
+  padding:20px 0px 0px 0px;
+  flex: 1.5;
+}
+
+.ge-footer > div:nth-child(4) {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ge-footer > div:nth-child(4) img {
+  width: 144px;
+  height: auto;
+  display: block;
+}
+
+.ge-footer > div:nth-child(1) p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.ge-footer > div:nth-child(2) p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ge-footer > div:nth-child(3) p {
+  margin: 0 0 8px;
+    font-weight: bold;
+   
+}
+
+.ge-footer > div:nth-child(3) a {
+  text-decoration: none;
+   color:black;
 }
 
