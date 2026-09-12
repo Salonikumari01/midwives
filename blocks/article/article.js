@@ -56,29 +56,29 @@ export default function decorate(block) {
   const ctaRow = rows[3];
   if (ctaRow) {
     const cells = [...ctaRow.children];
-    const ctaText = cells[0]?.textContent.trim();
+    const ctaLabel = cells[0]?.textContent.trim();
     const ctaLink = cells[1]?.textContent.trim();
-    const videoItem = cells[2]?.textContent.trim();
-    const videoItemLink = cells[3]?.textContent.trim();
+    const videoLabel = cells[2]?.textContent.trim();
+    const videoLink = cells[3]?.textContent.trim();
 
     const ctaWrapper = document.createElement('div');
     ctaWrapper.className = 'article-cta';
     moveInstrumentation(ctaRow, ctaWrapper);
 
-    if (ctaLink && ctaText) {
+    if (ctaLink && ctaLabel) {
       const link = document.createElement('a');
       link.href = ctaLink;
-      link.textContent = ctaText;
+      link.textContent = ctaLabel;
       link.className = 'article-cta-link button';
       ctaWrapper.append(link);
     }
 
-    if (videoItemLink && videoItem) {
-      const videoLink = document.createElement('a');
-      videoLink.href = videoItemLink;
-      videoLink.textContent = videoItem;
-      videoLink.className = 'article-video-link';
-      ctaWrapper.append(videoLink);
+    if (videoLink && videoLabel) {
+      const videoLinkEl = document.createElement('a');
+      videoLinkEl.href = videoLink;
+      videoLinkEl.textContent = videoLabel;
+      videoLinkEl.className = 'article-video-link';
+      ctaWrapper.append(videoLinkEl);
     }
 
     if (ctaWrapper.hasChildNodes()) article.append(ctaWrapper);

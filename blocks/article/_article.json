@@ -39,14 +39,14 @@
           "valueType": "string"
         },
         {
-          "component": "collapsible",
+          "component": "collapse",
           "name": "cta",
           "label": "CTA",
           "fields": [
             {
               "component": "text",
-              "name": "ctaText",
-              "label": "CTA Text",
+              "name": "ctaLabel",
+              "label": "CTA Label",
               "valueType": "string"
             },
             {
@@ -57,14 +57,14 @@
             },
             {
               "component": "text",
-              "name": "videoItem",
-              "label": "Video Item",
+              "name": "videoLabel",
+              "label": "Video Label",
               "valueType": "string"
             },
             {
               "component": "text",
-              "name": "videoItemLink",
-              "label": "Video Item Link",
+              "name": "videoLink",
+              "label": "Video Link",
               "valueType": "string"
             }
           ]
