@@ -18,5 +18,10 @@ module.exports = {
     'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
     'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
+
+    'xwalk/max-cells': ['error', {
+      '*': 4, // Leaves the standard default limit at 4 cells for other blocks
+      article: 5, // Permits exactly 5 cells specifically for your article block
+    }],
   },
 };

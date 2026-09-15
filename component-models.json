@@ -162,35 +162,28 @@
         "valueType": "string"
       },
       {
-        "component": "collapse",
+        "component": "text",
         "name": "cta",
-        "label": "CTA",
-        "fields": [
-          {
-            "component": "text",
-            "name": "ctaLabel",
-            "label": "CTA Label",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "ctaLink",
-            "label": "CTA Link",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "videoLabel",
-            "label": "Video Label",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "videoLink",
-            "label": "Video Link",
-            "valueType": "string"
-          }
-        ]
+        "label": "CTA Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "ctaText",
+        "label": "CTA Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "video",
+        "label": "Video Link",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "videoText",
+        "label": "Video Label",
+        "valueType": "string"
       }
     ]
   },
