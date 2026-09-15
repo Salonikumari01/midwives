@@ -353,12 +353,6 @@
         "component": "aem-content",
         "name": "link",
         "label": "CTA Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "CTA Label",
-        "valueType": "string"
       }
     ]
   },

@@ -53,17 +53,14 @@ export default function decorate(block) {
     card.append(body);
   }
 
-  // Row 3 — CTA link (field collapse: link + linkText → <a>)
+  // Row 3 — CTA link (aem-content → rendered as <a href="...">url</a>)
   const ctaRow = rows[3];
   if (ctaRow) {
     const anchor = ctaRow.querySelector('a');
     if (anchor?.href) {
-      const cta = document.createElement('a');
-      cta.href = anchor.href;
-      cta.textContent = anchor.textContent.trim() || anchor.href;
-      cta.className = 'news-card-cta button primary';
-      moveInstrumentation(ctaRow, cta);
-      card.append(cta);
+      anchor.className = 'news-card-cta button primary';
+      moveInstrumentation(ctaRow, anchor);
+      card.append(anchor);
     }
   }
 
